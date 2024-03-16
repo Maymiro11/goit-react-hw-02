@@ -1,0 +1,22 @@
+.feedbackText{
+    display: grid;
+    grid-gap: 20px;
+   place-items: start;
+   margin-top: 20px;
+   background-color: rgba(240, 248, 255, 0.7);
+   width: fit-content;
+   border: 2px solid rgb(14, 21, 22);
+  border-radius: 15px;
+   padding: 15px;
+   font-size: 20px;
+   /* text-decoration: underline; */
+}
+.feedbackText {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+  }
+  
+  .feedbackValue {
+    text-align: right;
+  }

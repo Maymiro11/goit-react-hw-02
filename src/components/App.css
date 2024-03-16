@@ -1,0 +1,52 @@
+@import-normalize;
+
+.container {
+  width: fit-content;
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid rgb(14, 21, 22);
+  border-radius: 15px;
+  background-color: rgb(184, 184, 182);
+  background-image: url(../img/tabletop-looking-out-to-empty-restaurant.jpg);
+  background-size: cover; 
+  background-position: center;
+  position: relative;
+  min-height: 500px;
+}
+.background-image-overlay{
+  background-image: url(../img/MADE_IN_UKRAINE.jpg);
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 200px;
+  height: 200px;
+  background-size: cover; 
+  background-position: center;
+  opacity: 0.9; 
+  border-radius: 50%;
+  clip-path: circle(37% at 50% 50%);
+  transition: all 0.3s ease;
+}
+.background-image-overlay:hover{
+  animation: flip-vertical-bck 2s infinite alternate;
+}
+@-webkit-keyframes flip-vertical-bck {
+  0% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateZ(-260px) rotateY(-180deg);
+            transform: translateZ(-260px) rotateY(-180deg);
+  }
+}
+@keyframes flip-vertical-bck {
+  0% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateZ(-260px) rotateY(-180deg);
+            transform: translateZ(-260px) rotateY(-180deg);
+  }
+}
